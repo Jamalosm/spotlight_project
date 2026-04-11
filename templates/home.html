@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotlight Advertising</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+/* PERFECT OFFSET */
+section {
+    scroll-margin-top: 100px;
+}
+
+.glass {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #facc15, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#advertisers .glass {
+   margin-top: 100PX;
+}
+
+</style>
+
+</head>
+
+<body class="bg-black text-white">
+
+<!-- 🔥 NAVBAR -->
+<!-- 🔥 NAVBAR -->
+<nav class="flex justify-between items-center px-6 md:px-10 h-20 border-b border-gray-800 sticky top-0 bg-black z-50">
+
+<h1 class="text-2xl font-bold gradient-text">SPOTLIGHT</h1>
+
+<!-- DESKTOP -->
+<div class="space-x-6 hidden md:block">
+<a href="#home" class="hover:text-yellow-400">Home</a>
+<a href="#advertisers" class="hover:text-yellow-400">Advertisers</a>
+<a href="#property" class="hover:text-yellow-400">Property Owners</a>
+<a href="#contact" class="hover:text-yellow-400">Contact</a>
+</div>
+
+<!-- CTA -->
+<a href="#contact" class="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded-lg">
+Enquire Now
+</a>
+
+<!-- 🔥 HAMBURGER -->
+<button id="menuBtn" class="md:hidden flex flex-col space-y-1">
+    <span class="w-6 h-0.5 bg-white transition-all"></span>
+    <span class="w-6 h-0.5 bg-white transition-all"></span>
+    <span class="w-6 h-0.5 bg-white transition-all"></span>
+</button>
+
+</nav>
+
+<!-- 🔥 MOBILE MENU -->
+<div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 text-xl transform -translate-y-full transition-transform duration-300 z-40">
+
+<a href="#home" class="menu-link">Home</a>
+<a href="#advertisers" class="menu-link">Advertisers</a>
+<a href="#property" class="menu-link">Property Owners</a>
+<a href="#contact" class="menu-link">Contact</a>
+
+<a href="#contact" class="bg-yellow-400 text-black px-6 py-3 rounded-lg">
+Enquire Now
+</a>
+
+</div>
+
+<!-- 🔥 MOBILE MENU -->
+<div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-black hidden flex flex-col items-center justify-center space-y-6 text-xl z-50">
+
+<button id="closeBtn" class="absolute top-6 right-6 text-3xl">✖</button>
+
+<a href="#home" class="menu-link">Home</a>
+<a href="#advertisers" class="menu-link">Advertisers</a>
+<a href="#property" class="menu-link">Property Owners</a>
+<a href="#contact" class="menu-link">Contact</a>
+
+<a href="#contact" class="bg-yellow-400 text-black px-6 py-3 rounded-lg">
+Enquire Now
+</a>
+
+</div>
+<!-- 🔥 HOME -->
+<section id="home" class="py-20 px-6 md:px-10" data-aos="fade-up">
+<div class="max-w-6xl mx-auto text-center">
+
+<h1 class="text-4xl md:text-5xl font-bold">
+BEST BRANDS LIVE IN <span class="gradient-text">SPOTLIGHT</span>
+</h1>
+
+<p class="mt-6 text-gray-400 max-w-xl mx-auto">
+Transform your property into a high-revenue advertising asset.
+</p>
+
+<a href="#contact" class="mt-8 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg">
+Get Started
+</a>
+
+</div>
+</section>
+
+<!-- 🔥 FEATURES -->
+<section class="py-20 px-6 md:px-10">
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+
+<div class="glass p-6 rounded-xl" data-aos="zoom-in">
+<h2 class="text-yellow-400">High Visibility</h2>
+<p class="text-gray-400">Prime locations ensure maximum exposure.</p>
+</div>
+
+<div class="glass p-6 rounded-xl" data-aos="zoom-in">
+<h2 class="text-yellow-400">Premium Brands</h2>
+<p class="text-gray-400">Partner with top-tier advertisers.</p>
+</div>
+
+<div class="glass p-6 rounded-xl" data-aos="zoom-in">
+<h2 class="text-yellow-400">Easy Setup</h2>
+<p class="text-gray-400">Simple onboarding.</p>
+</div>
+
+</div>
+</section>
+
+<!-- 🔥 ADVERTISERS -->
+<section id="advertisers" class="py-20 px-6 md:px-10" data-aos="fade-up">
+<div class="max-w-6xl mx-auto">
+
+<div class="text-center mb-10">
+<h1 class="text-4xl md:text-5xl font-bold gradient-text">For Advertisers</h1>
+<p class="text-gray-400">Reach premium locations and boost visibility</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="glass p-6 rounded-xl">
+<h2 class="text-yellow-400">Mass Reach</h2>
+<p class="text-gray-400">Target thousands daily</p>
+</div>
+
+<div class="glass p-6 rounded-xl">
+<h2 class="text-yellow-400">Prime Locations</h2>
+<p class="text-gray-400">High traffic zones</p>
+</div>
+
+<div class="glass p-6 rounded-xl">
+<h2 class="text-yellow-400">Affordable Pricing</h2>
+<p class="text-gray-400">Best ROI</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- 🔥 PROPERTY -->
+<section id="property" class="py-20 px-6 md:px-10 bg-gray-900" data-aos="fade-up">
+<div class="max-w-6xl mx-auto">
+
+<div class="text-center mb-10">
+<h1 class="text-4xl md:text-5xl font-bold gradient-text">Monetize Your Property</h1>
+<p class="text-gray-400">Earn passive income</p>
+</div>
+
+<div class="max-w-xl mx-auto">
+
+<form method="POST" action="/leads/submit/" class="space-y-4">
+{% csrf_token %}
+
+<input name="name" placeholder="Owner Name" class="w-full p-3 bg-black border border-gray-700 rounded">
+<input name="email" placeholder="Email" class="w-full p-3 bg-black border border-gray-700 rounded">
+<input name="phone" placeholder="Phone" class="w-full p-3 bg-black border border-gray-700 rounded">
+<input name="message" placeholder="Property Details" class="w-full p-3 bg-black border border-gray-700 rounded">
+
+<button class="w-full bg-yellow-400 text-black py-3 rounded-lg">
+Submit Property
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<!-- 🔥 CONTACT -->
+<section id="contact" class="py-20 px-6 md:px-10" data-aos="fade-up">
+<div class="max-w-6xl mx-auto">
+
+<div class="text-center mb-10">
+<h1 class="text-4xl md:text-5xl font-bold gradient-text">Contact Us</h1>
+</div>
+
+<div class="max-w-xl mx-auto">
+
+{% if request.GET.success %}
+<p class="text-green-400 text-center mb-4">✅ Submitted Successfully</p>
+{% endif %}
+
+<form method="POST" action="/leads/submit/" class="space-y-4">
+{% csrf_token %}
+
+<input name="name" placeholder="Name" class="w-full p-3 bg-black border border-gray-700 rounded">
+<input name="email" placeholder="Email" class="w-full p-3 bg-black border border-gray-700 rounded">
+<input name="phone" placeholder="Phone Number"
+class="w-full p-3 bg-black border border-gray-700 rounded">
+<textarea name="message" placeholder="Message" class="w-full p-3 bg-black border border-gray-700 rounded"></textarea>
+
+<button class="w-full bg-yellow-400 text-black py-3 rounded-lg">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<!-- 🔥 WHATSAPP -->
+<a id="whatsappBtn"
+href="https://wa.me/917338797548"
+class="fixed bottom-6 right-6 bg-green-500 px-4 py-3 rounded-full shadow-lg text-white text-xl cursor-pointer">
+💬
+</a>
+
+<!-- 🔥 FOOTER -->
+<footer class="text-center py-6 border-t border-gray-800">
+<p class="text-gray-500">© 2026 Spotlight Advertising</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+let isOpen = false;
+
+menuBtn.onclick = () => {
+    if (!isOpen) {
+        mobileMenu.classList.remove("-translate-y-full");
+        isOpen = true;
+    } else {
+        mobileMenu.classList.add("-translate-y-full");
+        isOpen = false;
+    }
+};
+
+// close after click
+document.querySelectorAll(".menu-link").forEach(link => {
+    link.onclick = () => {
+        mobileMenu.classList.add("-translate-y-full");
+        isOpen = false;
+    };
+});
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const message = document.querySelector('textarea[name="message"]')?.value || "";
+
+    const text = `New Lead:%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Phone: ${phone}%0A
+Message: ${message}`;
+
+    const url = `https://wa.me/91XXXXXXXXXX?text=${text}`;
+
+    document.getElementById("whatsappBtn").href = url;
+});
+</script>
+</script>
+</script>
+</body>
+</html>
