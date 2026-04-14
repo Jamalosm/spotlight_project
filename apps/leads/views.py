@@ -18,4 +18,3 @@ def submit_lead(request):
         return redirect("/?success=1")
 
     return redirect("/")
-
